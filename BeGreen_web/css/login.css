@@ -1,0 +1,224 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: aliceblue;
+    background-size: cover;
+
+}
+
+.container {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px #919191;
+    height: 500px;
+    max-width: 1000px;
+    transition: all 1s ease;
+    margin: 1rem;
+
+
+}
+
+.information {
+    width: 40%;
+    display: flex;
+    align-items: start;
+    text-align: center;
+    background-color: rgb(220, 244, 223);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+}
+
+.info-list {
+    width: 100%;
+    padding-top: 60px;
+
+}
+
+.info-list img {
+    height: 120px;
+    margin: 15px 0;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px #919191;
+
+
+}
+
+.info-list h2 {
+    font-size: 1.5rem;
+    margin: 30px 0;
+    color: rgb(1, 91, 12);
+
+}
+
+.info-list p {
+    margin: 20px 0;
+    font-size: 12px;
+    color: rgb(1, 91, 12);
+
+}
+
+.info-list input {
+    background-color: transparent;
+    border: solid 2px #9AC586;
+    border-radius: 20px;
+    padding: 10px 20px;
+    outline: none;
+    color: rgb(1, 91, 12);
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-top: 5px;
+
+}
+
+.info-list input:hover {
+    background-color: rgb(2, 190, 2);
+    border: none;
+    color: #fff;
+    box-shadow: 0 3px 6px #919191;
+
+}
+
+/*--> Sección Crear Cuenta <-*/
+
+.form-information {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    background-color: rgb(242, 247, 243);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.form-info-list {
+    padding: 0 30px;
+
+}
+
+.form-info-list h2 {
+    font-size: 1.5rem;
+    padding-top: 15px;
+    color: rgb(1, 91, 12);
+
+
+}
+
+.icons {
+    margin: 15px 0;
+
+}
+
+.icons i {
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: rgb(1, 91, 12);
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px #919191;
+
+
+}
+
+.icons i:hover {
+    background-color: rgb(2, 190, 2);
+    color: #fff;
+
+}
+
+.form-info-list p {
+    margin: 20px 0;
+    color: rgb(1, 91, 12);
+    font-size: 12px;
+
+}
+
+.form {
+    margin: 30px 0 0 0;
+
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #919191;
+
+}
+
+.form label input {
+    width: 100%;
+    padding: 5px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #919191;
+
+}
+
+.form label i {
+    color: #919191
+}
+
+.form input[type="submit"] {
+    background-color: rgb(220, 244, 223);
+    color: rgb(1, 91, 12);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: solid 2px #9AC586;
+    transition: background-color .3s ease;
+    margin-top: 35px;
+
+
+
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(2, 190, 2);
+    color: #fff;
+    border: none;
+    box-shadow: 0 3px 6px #919191;
+
+}
+
+.hide{
+    position: absolute;
+    transform: translateY(-300%);
+    transition: all .5s ease;
+    overflow-y: auto;
+
+}
+
+/*-->Responsive-Form <-*/
+
+@media screen and (max-width:580px) {
+    html {
+        font-size: 10px;
+    }
+
+    
+    }
+
+

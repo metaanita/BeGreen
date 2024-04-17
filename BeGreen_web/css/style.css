@@ -1,0 +1,672 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0%;
+    background-color: rgb(242, 239, 242);
+    box-sizing: border-box;
+
+}
+
+.hidden {
+    display: none;
+
+}
+
+/*--------ENCABEZADO---------------------*/
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(242, 247, 243);
+    margin: 0 auto;
+    padding: 2rem;
+
+
+
+}
+
+.menu img {
+    height: 120px;
+
+}
+
+
+/*---------Menu de Navegacion-----------*/
+.menu {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+.menu ul li {
+    margin: 0 10px;
+    padding-right: 10px;
+
+}
+
+.menu ul li a {
+    color: rgb(1, 98, 12);
+    text-decoration: none;
+    font-size: 100%;
+    margin-right: 20px;
+
+}
+
+.menu ul li :hover {
+    color: rgb(2, 190, 2);
+    transform: scale(3, 3);
+
+}
+
+
+/*---------CONTENEDOR DE BUSQUEDA-------------*/
+
+.menu-search-container {
+    margin-left: 0;
+    padding-right: 30px;
+
+}
+
+.menu-search-container {
+    display: flex;
+
+}
+
+.menu-search-container input [type="text"] {
+    padding: 10px 5px;
+
+}
+
+.menu-search-container input [type="submit"] {
+    background-color: rgb(220, 244, 223);
+    color: rgb(1, 98, 12);
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+
+}
+
+
+.menu-search-container input[type="submit"]:hover {
+    background-color: rgb(2, 190, 2);
+
+}
+
+.menu-iconos {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.menu-iconos i {
+    font-size: 25px;
+    color: rgb(1, 91, 12);
+    margin-right: 5px;
+
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    color: rgb(1, 91, 12);
+
+}
+
+.open-menu:hover {
+    color: rgb(2, 190, 2);
+
+}
+
+
+.close-menu:hover {
+    color: rgb(2, 190, 2);
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+
+    }
+
+
+
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+        background-color: rgb(220, 244, 223);
+        padding: 2rem;
+        height: 100vh;
+        overflow-y: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        transition: all .5s ease;
+
+
+    }
+
+
+    .menu.visible {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+
+    .menu-list {
+        padding-top: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+
+    .menu-list li {
+
+        padding: 15px;
+
+
+    }
+
+
+    .menu-iconos {
+
+        padding: 20px;
+
+
+    }
+
+
+
+
+}
+
+
+
+/*--------TODA LA INFO DE LA PAGINA---------------*/
+.container h5,
+h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.banner h6 {
+    color: rgb(242, 239, 242);
+
+
+}
+
+.single-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.slick-dots {
+    text-align: center;
+    margin: 5px 0;
+
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 20px;
+    background-color: transparent;
+    font-size: 1px;
+    color: transparent;
+    border-radius: 50%;
+
+
+}
+
+.slick-dots li button {
+    font-size: 2px;
+    line-height: 05px;
+    background-color: rgb(136, 133, 133);
+    border-radius: 50%;
+
+}
+
+
+.slick-prev,
+.slick-next {
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    font-size: 30px;
+    background-color: transparent;
+    border: transparent;
+
+
+}
+
+.slick-prev i,
+.slick-next i {
+    color: rgb(136, 133, 133);
+
+
+}
+
+.slick-next {
+    right: 10px;
+
+}
+
+.slick-prev {
+    left: 10px;
+
+}
+
+/*---------------ICONOS FIDELIDAD,ENVIOS-------------*/
+.fidelity-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.fidelity-icons i {
+    flex: 1;
+    text-align: center;
+    color: rgb(152, 152, 152)
+}
+
+.fidelity-icons i:hover {
+    color: rgb(1, 91, 12);
+    transform: scale (1, 1);
+
+}
+
+/*-----------------CATEGORIAS--------------------*/
+.categorias h3 {
+    text-align: start;
+    margin-bottom: 10px;
+    color: rgb(1, 91, 12);
+
+}
+
+.categorias {
+    margin: 100px 0;
+
+
+}
+
+
+.category-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.category {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.category img {
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.category button {
+    background-color: #9AC586;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+.category button:hover {
+    background-color: rgb(1, 91, 12);
+
+}
+
+/*------------SECCION DE PRODUCTOS (más vendidos)---------*/
+.productos,
+h3 {
+    text-align: start;
+    margin-bottom: 20px;
+    color: rgb(1, 91, 12);
+
+}
+
+.productos {
+    margin: 100px 0;
+
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.producto-stock {
+    font-size: small;
+    color: rgb(2, 190, 2);
+    font-weight: bold;
+
+}
+
+.producto-rating .fa {
+    color: #e3c206;
+
+}
+
+.producto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.producto button {
+    background-color: #9AC586;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+.producto button:hover {
+    background-color: rgb(1, 91, 12);
+
+}
+
+/*----------SECCION NOSOTROS--------------*/
+.nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.nosotros {
+    margin: 100px 0;
+
+}
+
+.nosotros-conten {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.nosotros-imagen {
+    width: 70%;
+    height: auto;
+
+}
+
+.nosotros-texto {
+    flex: auto;
+    max-width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nosotros h3 {
+    margin-bottom: 0.5em;
+
+}
+
+.nosotros a {
+    color: rgb(1, 91, 12);
+    text-decoration: none;
+
+}
+
+/*---------Pie de pagina FOOTER---------*/
+
+.pie-depagina {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+
+
+}
+
+.bottom-menu {
+    background-color: rgb(242, 247, 243);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0 100px;
+
+
+}
+
+.bottom-menu h4 {
+    color: rgb(1, 91, 12);
+
+}
+
+.bottom-menu img {
+
+    height: 130px;
+    max-width: 130px;
+    margin-top: 30px;
+
+}
+
+.resources,
+.virtual-shop,
+.rrss,
+.newsletter {
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+
+.resources ul {
+    padding: 0;
+
+}
+
+.resources ul li {
+    margin-bottom: 5px;
+    font-size: small;
+    cursor: pointer;
+
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.resources ul :hover {
+    color: rgb(2, 190, 2);
+
+}
+
+.virtual-shop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.virtual-shop ul {
+    padding: 0;
+
+}
+
+.virtual-shop ul li {
+    margin-bottom: 5px;
+    font-size: small;
+
+}
+
+.virtual-text {
+    color: black;
+
+}
+
+.rrss li a {
+    color: rgb(1, 91, 12);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.rrss li a :hover {
+    color: rgb(2, 190, 2);
+
+}
+
+.rrss .fa-2x {
+    margin-right: 10px;
+
+}
+
+.newsletter input[type="email"] {
+    padding: 10px 5px;
+    margin-right: 5px;
+    width: 60%;
+    background-color: rgb(242, 239, 242);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    border: solid 1px #919191;
+    color: #919191;
+
+}
+
+.newsletter p {
+    font-size: small;
+    margin-bottom: 16px;
+
+}
+
+.boton-suscribirse {
+    display: inline-block;
+    padding: 10px 5px;
+    background-color: rgb(220, 244, 223);
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(1, 91, 12);
+    border: solid 2px #9AC586;
+    border-radius: 20px;
+
+
+}
+
+.boton-suscribirse:hover {
+    background-color: rgb(2, 190, 2);
+    box-shadow: 0 3px 6px #919191;
+
+}
+
+.container,
+.fidelity-icons,
+.categorias,
+.productos,
+.nosotros {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .container,
+    .fidelity-icons,
+    .categorias,
+    .productos,
+    .nosotros,
+    .pie-depagina {
+        max-width: 100%;
+        padding: 0 10px;
+
+
+    }
+
+
+
+
+
+
+}
